@@ -869,7 +869,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
         }(va(a, e))
     }
     var Sa = document.createElement("template");
-    Sa.innerHTML = '\n  <style>\n  .setting {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    border-bottom: 1px solid var(--color-tone-4);\n    padding: 16px 0;\n  }\n\n  a, a:visited {\n    color: var(--color-tone-2);\n  }\n\n  .title {\n    font-size: 18px;\n  }\n  .text {\n    padding-right: 8px;\n  }\n  .description {\n    font-size: 12px;\n    color: var(--color-tone-2);\n  }\n\n  #footnote {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    padding: 16px;\n    color: var(--color-tone-2);\n    font-size: 12px;\n    text-align: right;\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-end;\n  }\n\n  #privacy-policy,\n  #copyright {\n    text-align: left;\n  }\n\n  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {\n    .setting {\n      padding: 16px;\n    }\n  }\n\n  </style>\n  <div class="sections">\n    <section>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Hard Mode</div>\n          <div class="description">Any revealed hints must be used in subsequent guesses</div>\n        </div>\n        <div class="control">\n          <game-switch id="hard-mode" name="hard-mode"></game-switch>\n        </div>\n      </div>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Dark Theme</div>\n        </div>\n        <div class="control">\n          <game-switch id="dark-theme" name="dark-theme"></game-switch>\n        </div>\n      </div>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Color Blind Mode</div>\n          <div class="description">High contrast colors</div>\n        </div>\n        <div class="control">\n          <game-switch id="color-blind-theme" name="color-blind-theme"></game-switch>\n        </div>\n      </div>\n    </section>\n\n    <section>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Feedback</div>\n        </div>\n        <div class="control">\n          <a href="mailto:wordle@powerlanguage.co.uk?subject=Feedback" title="wordle@powerlanguage.co.uk">Email</a>\n          |\n          <a href="https://twitter.com/intent/tweet?screen_name=powerlanguish" target="blank" title="@powerlanguish">Twitter</a>\n        </div>\n      </div>\n    </section>\n  </div>\n  <div id="footnote">\n    <div>\n      <div id="privacy-policy"><a href="https://www.powerlanguage.co.uk/privacy-policy.html" target="_blank">Privacy Policy</a></div>\n      <div id="copyright">Copyright 2021-2022. All Rights Reserved.</div>\n    </div>\n    <div>\n      <div id="puzzle-number"></div>\n      <div id="hash"></div>\n    </div>\n  </div>\n';
+    Sa.innerHTML = '\n  <style>\n  .setting {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    border-bottom: 1px solid var(--color-tone-4);\n    padding: 16px 0;\n  }\n\n  a, a:visited {\n    color: var(--color-tone-2);\n  }\n\n  .title {\n    font-size: 18px;\n  }\n  .text {\n    padding-right: 8px;\n  }\n  .description {\n    font-size: 12px;\n    color: var(--color-tone-2);\n  }\n\n  #footnote {\n    position: absolute;\n    bottom: 0;\n    left: 0;\n    right: 0;\n    padding: 16px;\n    color: var(--color-tone-2);\n    font-size: 12px;\n    text-align: right;\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-end;\n  }\n\n  #privacy-policy,\n  #copyright {\n    text-align: left;\n  }\n\n  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {\n    .setting {\n      padding: 16px;\n    }\n  }\n\n  </style>\n  <div class="sections">\n    <section>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Դժվար Կերպ</div>\n          <div class="description">Ճիշտ գուշակած տառերը պարտադիր պետք է օգտագորձվեն հաջորդ փորձերում:</div>\n        </div>\n        <div class="control">\n          <game-switch id="hard-mode" name="hard-mode"></game-switch>\n        </div>\n      </div>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Մուգ Թեմա</div>\n        </div>\n        <div class="control">\n          <game-switch id="dark-theme" name="dark-theme"></game-switch>\n        </div>\n      </div>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Գունակոյր</div>\n          <div class="description">Բարձր հակադրությունով գույներ:</div>\n        </div>\n        <div class="control">\n          <game-switch id="color-blind-theme" name="color-blind-theme"></game-switch>\n        </div>\n      </div>\n    </section>\n\n    <section>\n      <div class="setting">\n        <div class="text">\n          <div class="title">Արձագանք</div>\n        </div>\n        <div class="control">\n          <a href="mailto:gagikmov+bardl@gmail.com" title="gagikmov+bardl@gmail.com">Email</a>\n          |\n          <a href="https://twitter.com/intent/tweet?screen_name=gagikm" target="blank" title="@gagikm">Twitter</a>\n        </div>\n      </div>\n    </section>\n  </div>\n  <div id="footnote">\n    <div>\n   <div id="copyright">Copyright 2022. All Rights Reserved.</div>\n  <div style="text-align:left">♡ GG</div>\n  </div>\n    <div>\n      <div id="puzzle-number"></div>\n      <div id="hash"></div>\n    </div>\n  </div>\n';
     var _a = function(e) {
         r(t, e);
         var a = h(t);
@@ -977,7 +977,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
             s = e % 100;
         return e + (a[(s - 20) % 10] || a[s] || a[0])
     }
-    var Ha = new Date(2021, 5, 19, 0, 0, 0, 0);
+    var Ha = new Date(2021, 12, 24, 0, 0, 0, 0);
 
     function Na(e, a) {
         var s = new Date(e),
@@ -993,7 +993,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     function Ga(e) {
         return Na(Ha, e)
     }
-    var Ba = "ճւերտյւիոպասդֆգհձկլզխծվբնմչէռթօփըշջղժցք",
+    var Ba = "ճւերտյւիոպասդֆգհձկլզխծվբնմչէռթօփըշջղժցքև",
         Fa = [].concat(g(Ba.split("").slice(13)), g(Ba.split("").slice(0, 13)));
 
     function Wa(e) {
@@ -1049,7 +1049,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     var Za = "IN_PROGRESS",
         es = "WIN",
         as = "FAIL",
-        ss = ["Genius", "Magnificent", "Impressive", "Splendid", "Great", "Phew"],
+        ss = ["Հանճար", "Հոյակապ", "Տպավորիչ", "Փայլուն", "հիանալի", "Այ ըդման"],
         ts = function(e) {
             r(t, e);
             var a = h(t);
@@ -1077,7 +1077,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
                         var e, a = this.$board.querySelectorAll("game-row")[this.rowIndex],
                             s = this.boardState[this.rowIndex];
                             console.log(a, s);
-                        if (e = s, !Ta.includes(e) && !La.includes(e)) return a.setAttribute("invalid", ""), void this.addToast("Not in word list");
+                        if (e = s, !Ta.includes(e) && !La.includes(e)) return a.setAttribute("invalid", ""), void this.addToast("Բառերի ցանկում չկա");
                         if (this.hardMode) {
                             var t = function(e, a, s) {
                                     if (!e || !a || !s) return {
@@ -1095,7 +1095,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
                                     for (var i in o)
                                         if ((r[i] || 0) < o[i]) return {
                                             validGuess: !1,
-                                            errorMessage: "Guess must contain ".concat(i.toUpperCase())
+                                            errorMessage: i.toUpperCase().concat(" տառը պետք է լինի փորձի մեջ:")
                                         };
                                     return {
                                         validGuess: !0
@@ -1103,7 +1103,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
                                 }(s, this.boardState[this.rowIndex - 1], this.evaluations[this.rowIndex - 1]),
                                 o = t.validGuess,
                                 n = t.errorMessage;
-                            if (!o) return a.setAttribute("invalid", ""), void this.addToast(n || "Not valid in hard mode")
+                            if (!o) return a.setAttribute("invalid", ""), void this.addToast(n || "Վավեր չէ դժվար կերպով")
                         }
                         var r = function(e, a) {
                             for (var s = Array(a.length).fill(Oa), t = Array(a.length).fill(!0), o = Array(a.length).fill(!0), n = 0; n < e.length; n++) e[n] === a[n] && o[n] && (s[n] = Ma, t[n] = !1, o[n] = !1);
@@ -1164,7 +1164,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
                 key: "submitGuess",
                 value: function() {
                     if (this.gameStatus === Za && this.canInput) {
-                        if (5 !== this.tileIndex) return this.$board.querySelectorAll("game-row")[this.rowIndex].setAttribute("invalid", ""), void this.addToast("Not enough letters");
+                        if (5 !== this.tileIndex) return this.$board.querySelectorAll("game-row")[this.rowIndex].setAttribute("invalid", ""), void this.addToast("Տառերը քիչ են");
                         this.evaluateRow()
                     }
                 }
@@ -1223,19 +1223,19 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
                             n = s.disabled;
                         switch (t) {
                             case "hard-mode":
-                                return void(n ? e.addToast("Hard mode can only be enabled at the start of a round", 1500, !0) : (e.hardMode = o, ja({
+                                return void(n ? e.addToast("Դժվար կերպը պետք է խաղի սկզբին միացվի:", 1500, !0) : (e.hardMode = o, ja({
                                     hardMode: o
                                 })))
                         }
                     })), this.shadowRoot.getElementById("settings-button").addEventListener("click", (function(a) {
                         var s = e.$game.querySelector("game-page"),
-                            t = document.createTextNode("Settings");
+                            t = document.createTextNode("Նախընտրանքներ");
                         s.appendChild(t);
                         var o = document.createElement("game-settings");
                         o.setAttribute("slot", "content"), o.gameApp = e, s.appendChild(o), s.setAttribute("open", "")
                     })), this.shadowRoot.getElementById("help-button").addEventListener("click", (function(a) {
                         var s = e.$game.querySelector("game-page"),
-                            t = document.createTextNode("How to play");
+                            t = document.createTextNode("Խաղի Կանոնները");
                         s.appendChild(t);
                         var o = document.createElement("game-help");
                         o.setAttribute("page", ""), o.setAttribute("slot", "content"), s.appendChild(o), s.setAttribute("open", "")
@@ -1303,7 +1303,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
             ["-", "ա", "ս", "դ", "ֆ", "գ", "հ", "ձ", "կ", "լ", "-"],
             ["↵", "զ", "խ", "ծ", "վ", "բ", "ն", "մ", "←"],
             ["-", "չ", "է", "ռ", "թ", "օ", "փ", "ը", "շ", "-"],
-            ["-", "-", "-", "-", "ջ", "ք", "ղ", "ժ", "ց", "և", "-", "-","-", "-"]
+            ["-", "-", "ջ", "ք", "ղ", "ժ", "ց", "և", "-", "-"]
         ],
         us = function(e) {
             r(t, e);
@@ -1353,7 +1353,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
                         var s = document.createElement("div");
                         s.classList.add("row"), a.forEach((function(e) {
                             var a;
-                            if (e >= "a" && e <= "z" || e >= "ա" && e <= "ֆ" || "←" === e || "↵" === e) {
+                            if (e >= "a" && e <= "z" || e >= "ա" && e <= "ֆ" || "և" === e || "←" === e || "↵" === e) {
                                 if ((a = is.content.cloneNode(!0).firstElementChild).dataset.key = e, a.textContent = e, "←" === e) {
                                     var t = document.createElement("game-icon");
                                     t.setAttribute("icon", "backspace"), a.textContent = "", a.appendChild(t), a.classList.add("one-and-a-half")
@@ -1596,18 +1596,18 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
         var t
     }
     var Cs = document.createElement("template");
-    Cs.innerHTML = '\n  <style>\n    .container {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      padding: 16px 0; \n    }\n    h1 {\n      font-weight: 700;\n      font-size: 16px;\n      letter-spacing: 0.5px;\n      text-transform: uppercase;\n      text-align: center;\n      margin-bottom: 10px;\n    }\n  \n    #statistics {\n      display: flex;\n      margin-bottom: \n    }\n\n    .statistic-container {\n      flex: 1;\n    }\n\n    .statistic-container .statistic {\n      font-size: 36px;\n      font-weight: 400;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      text-align: center;\n      letter-spacing: 0.05em;\n      font-variant-numeric: proportional-nums;\n    }\n\n    .statistic.timer {\n      font-variant-numeric: initial;\n    }\n\n    .statistic-container .label {\n      font-size: 12px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      text-align: center;\n    }\n\n    #guess-distribution {\n      width: 80%;\n    }\n\n    .graph-container {\n      width: 100%;\n      height: 20px;\n      display: flex;\n      align-items: center;\n      padding-bottom: 4px;\n      font-size: 14px;\n      line-height: 20px;\n    }\n\n    .graph-container .graph {\n      width: 100%;\n      height: 100%;\n      padding-left: 4px;\n    }\n\n    .graph-container .graph .graph-bar {\n      height: 100%;\n      /* Assume no wins */\n      width: 0%;\n      position: relative;\n      background-color: var(--color-absent);\n      display: flex;\n      justify-content: center;\n    }\n\n    .graph-container .graph .graph-bar.highlight {\n      background-color: var(--color-correct);\n    }\n\n    .graph-container .graph .graph-bar.align-right {\n      justify-content: flex-end;\n      padding-right: 8px;\n    }\n\n    .graph-container .graph .num-guesses {\n      font-weight: bold;\n      color: var(--tile-text-color);\n    }\n\n    #statistics,\n    #guess-distribution {\n      padding-bottom: 10px;\n    }\n\n    .footer {\n      display: flex;\n      width: 100%;\n    }\n\n    .countdown {\n      border-right: 1px solid var(--color-tone-1);\n      padding-right: 12px;\n      width: 50%;\n    }\n\n    .share {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      padding-left: 12px;\n      width: 50%;\n    }\n\n    .no-data {\n      text-align: center;\n    }\n\n    button#share-button {\n      background-color: var(--key-bg-correct);\n      color: var(--key-evaluated-text-color);\n      font-family: inherit;\n      font-weight: bold;\n      border-radius: 4px;\n      cursor: pointer;\n      border: none;\n      user-select: none;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      text-transform: uppercase;\n      -webkit-tap-highlight-color: rgba(0,0,0,0.3);\n      width: 80%;\n      font-size: 20px;\n      height: 52px;\n      -webkit-filter: brightness(100%);\n    }\n    button#share-button:hover {\n      opacity: 0.9;\n    }\n    button#share-button game-icon {\n      width: 24px;\n      height: 24px;\n      padding-left: 8px;\n    }\n  </style>\n\n  <div class="container">\n    <h1>Statistics</h1>\n    <div id="statistics"></div>\n    <h1>Guess Distribution</h1>\n    <div id="guess-distribution"></div>\n    <div class="footer"></div>\n  </div>\n';
+    Cs.innerHTML = '\n  <style>\n    .container {\n      display: flex;\n      flex-direction: column;\n      align-items: center;\n      justify-content: center;\n      padding: 16px 0; \n    }\n    h1 {\n      font-weight: 700;\n      font-size: 16px;\n      letter-spacing: 0.5px;\n      text-transform: uppercase;\n      text-align: center;\n      margin-bottom: 10px;\n    }\n  \n    #statistics {\n      display: flex;\n      margin-bottom: \n    }\n\n    .statistic-container {\n      flex: 1; padding: 0 7px;\n    }\n\n    .statistic-container .statistic {\n      font-size: 36px;\n      font-weight: 400;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      text-align: center;\n      letter-spacing: 0.05em;\n      font-variant-numeric: proportional-nums;\n    }\n\n    .statistic.timer {\n      font-variant-numeric: initial;\n    }\n\n    .statistic-container .label {\n      font-size: 12px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      text-align: center;\n    }\n\n    #guess-distribution {\n      width: 80%;\n    }\n\n    .graph-container {\n      width: 100%;\n      height: 20px;\n      display: flex;\n      align-items: center;\n      padding-bottom: 4px;\n      font-size: 14px;\n      line-height: 20px;\n    }\n\n    .graph-container .graph {\n      width: 100%;\n      height: 100%;\n      padding-left: 4px;\n    }\n\n    .graph-container .graph .graph-bar {\n      height: 100%;\n      /* Assume no wins */\n      width: 0%;\n      position: relative;\n      background-color: var(--color-absent);\n      display: flex;\n      justify-content: center;\n    }\n\n    .graph-container .graph .graph-bar.highlight {\n      background-color: var(--color-correct);\n    }\n\n    .graph-container .graph .graph-bar.align-right {\n      justify-content: flex-end;\n      padding-right: 8px;\n    }\n\n    .graph-container .graph .num-guesses {\n      font-weight: bold;\n      color: var(--tile-text-color);\n    }\n\n    #statistics,\n    #guess-distribution {\n      padding-bottom: 10px;\n    }\n\n    .footer {\n      display: flex;\n      width: 100%;\n    }\n\n    .countdown {\n      border-right: 1px solid var(--color-tone-1);\n      padding-right: 12px;\n      width: 50%;\n    }\n\n    .share {\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      width: 50%;\n    }\n\n    .no-data {\n      text-align: center;\n    }\n\n    button#share-button {\n      background-color: var(--key-bg-correct);\n      color: var(--key-evaluated-text-color);\n      font-family: inherit;\n      font-weight: bold;\n      border-radius: 4px;\n      cursor: pointer;\n      border: none;\n      user-select: none;\n      display: flex;\n      justify-content: center;\n      align-items: center;\n      text-transform: uppercase;\n      -webkit-tap-highlight-color: rgba(0,0,0,0.3);\n      width: 80%;\n      font-size: 20px;\n      height: 52px;\n      -webkit-filter: brightness(100%);\n    }\n    button#share-button:hover {\n      opacity: 0.9;\n    }\n    button#share-button game-icon {\n      width: 24px;\n      height: 24px;\n      padding-left: 8px;\n    }\n  </style>\n\n  <div class="container">\n    <h1>Վիճակագրություն</h1>\n    <div id="statistics"></div>\n    <h1>Փորձերի Հաշիվը</h1>\n    <div id="guess-distribution"></div>\n    <div class="footer"></div>\n  </div>\n';
     var Ls = document.createElement("template");
     Ls.innerHTML = '\n  <div class="statistic-container">\n    <div class="statistic"></div>\n    <div class="label"></div>\n  </div>\n';
     var Ts = document.createElement("template");
     Ts.innerHTML = '\n    <div class="graph-container">\n      <div class="guess"></div>\n      <div class="graph">\n        <div class="graph-bar">\n          <div class="num-guesses">\n        </div>\n      </div>\n      </div>\n    </div>\n';
     var Is = document.createElement("template");
-    Is.innerHTML = '\n  <div class="countdown">\n    <h1>Next WORDLE</h1>\n    <div id="timer">\n      <div class="statistic-container">\n        <div class="statistic timer">\n          <countdown-timer></countdown-timer>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class="share">\n    <button id="share-button">\n      Share <game-icon icon="share"></game-icon>\n    </button>\n  </div>\n';
+    Is.innerHTML = '\n  <div class="countdown">\n    <h1>Հաջորդ Բառը</h1>\n    <div id="timer">\n      <div class="statistic-container">\n        <div class="statistic timer">\n          <countdown-timer></countdown-timer>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class="share">\n    <button id="share-button">\n      Կիսվել <game-icon icon="share"></game-icon>\n    </button>\n  </div>\n';
     var Ms = {
-            currentStreak: "Current Streak",
-            maxStreak: "Max Streak",
-            winPercentage: "Win %",
-            gamesPlayed: "Played",
+            currentStreak: "Ընթացիկ հաղթական շարանը",
+            maxStreak: "Ամենաերկար հաղթական շարանը",
+            winPercentage: "Lուծված %",
+            gamesPlayed: "Խաղացած",
             gamesWon: "Won",
             averageGuesses: "Av. Guesses"
         },
@@ -1703,7 +1703,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
                                 isHardMode: e.gameApp.hardMode,
                                 isWin: e.gameApp.gameStatus === es
                             }), (function() {
-                                e.gameApp.addToast("Copied results to clipboard", 2e3, !0)
+                                e.gameApp.addToast("Copied", 2e3, !0)
                             }), (function() {
                                 e.gameApp.addToast("Share failed", 2e3, !0)
                             }))
@@ -1750,7 +1750,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     }(c(HTMLElement));
     customElements.define("game-switch", Ps);
     var $s = document.createElement("template");
-    $s.innerHTML = '\n  <style>\n  .instructions {\n    font-size: 14px;\n    color: var(--color-tone-1)\n  }\n\n  .examples {\n    border-bottom: 1px solid var(--color-tone-4);\n    border-top: 1px solid var(--color-tone-4);\n  }\n\n  .example {\n    margin-top: 24px;\n    margin-bottom: 24px;\n  }\n\n  game-tile {\n    width: 40px;\n    height: 40px;\n  }\n\n  :host([page]) section {\n    padding: 16px;\n    padding-top: 0px;\n  }\n\n  </style>\n  <section>\n    <div class="instructions">\n      <p>Guess the <strong>WORDLE</strong> in 6 tries.</p>\n      <p>Each guess must be a valid 5 letter word. Hit the enter button to submit.</p>\n      <p>After each guess, the color of the tiles will change to show how close your guess was to the word.</p>\n      <div class="examples">\n        <p><strong>Examples</strong></p>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="w" evaluation="correct" reveal></game-tile>\n            <game-tile letter="e"></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="r"></game-tile>\n            <game-tile letter="y"></game-tile>\n          </div>\n          <p>The letter <strong>W</strong> is in the word and in the correct spot.</p>\n        </div>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="p"></game-tile>\n            <game-tile letter="i" evaluation="present" reveal></game-tile>\n            <game-tile letter="l"></game-tile>\n            <game-tile letter="l"></game-tile>\n            <game-tile letter="s"></game-tile>\n          </div>\n          <p>The letter <strong>I</strong> is in the word but in the wrong spot.</p>\n        </div>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="v"></game-tile>\n            <game-tile letter="a"></game-tile>\n            <game-tile letter="g"></game-tile>\n            <game-tile letter="u" evaluation="absent" reveal></game-tile>\n            <game-tile letter="e"></game-tile>\n          </div>\n          <p>The letter <strong>U</strong> is not in the word in any spot.</p>\n        </div>\n      </div>\n      <p><strong>A new WORDLE will be available each day!<strong></p>\n    </div>\n  </section>\n';
+    $s.innerHTML = '\n  <style>\n  .instructions {\n    font-size: 14px;\n    color: var(--color-tone-1)\n  }\n\n  .examples {\n    border-bottom: 1px solid var(--color-tone-4);\n    border-top: 1px solid var(--color-tone-4);\n  }\n\n  .example {\n    margin-top: 24px;\n    margin-bottom: 24px;\n  }\n\n  game-tile {\n    width: 40px;\n    height: 40px;\n  }\n\n  :host([page]) section {\n    padding: 16px;\n    padding-top: 0px;\n  }\n\n  </style>\n  <section>\n    <div class="instructions">\n      <p>Փորձիր գուշակել բառը վեց փորձից:</p>\n      <p>Ամեն փորձը պետք է լինի վավեր 5 տառ բառ:</p>\n      <p>Ամեն փորձից հետո տառերի գույները կհուշեն թե   ինչկան մոտ էր փորձը ճիշտ բառին:</p>\n      <div class="examples">\n        <p><strong>Օրինակներ</strong></p>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="կ" evaluation="correct" reveal></game-tile>\n            <game-tile letter="ա"></game-tile>\n            <game-tile letter="ղ"></game-tile>\n            <game-tile letter="ի"></game-tile>\n            <game-tile letter="ն"></game-tile>\n          </div>\n          <p>Այս փորձում <strong>Կ</strong> տառը բառի մեջ է և ճիշտ տեղում է:</p>\n        </div>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="լ"></game-tile>\n            <game-tile letter="ո" evaluation="present" reveal></game-tile>\n            <game-tile letter="լ"></game-tile>\n            <game-tile letter="ի"></game-tile>\n            <game-tile letter="կ"></game-tile>\n          </div>\n          <p>Այս փորձում <strong>Ո</strong> տառը բառի մեջ է բայց ճիշտ տեղում չէ:</p>\n        </div>\n        <div class="example">\n          <div class="row">\n            <game-tile letter="կ"></game-tile>\n            <game-tile letter="ա"></game-tile>\n            <game-tile letter="ր"></game-tile>\n            <game-tile letter="ա" evaluation="absent" reveal></game-tile>\n            <game-tile letter="պ"></game-tile>\n          </div>\n          <p><strong>Ա</strong> տառը բառի մեջ չէ:</p>\n        </div>\n      </div>\n      <p><strong>Ամեն օր նոր գուշակելու բառ կլինի:<strong></p>\n    </div>\n  </section>\n';
     var Hs = function(e) {
         r(t, e);
         var a = h(t);
