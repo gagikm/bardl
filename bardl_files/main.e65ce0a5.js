@@ -1051,7 +1051,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
     var Za = "IN_PROGRESS",
         es = "WIN",
         as = "FAIL",
-        ss = ["Հանճար", "Հոյակապ", "Տպավորիչ", "Փայլուն", "հիանալի", "Այ ըդման"],
+        ss = ["Հանճար", "Հոյակապ", "Տպավորիչ", "Փայլուն", "հիանալի", "հրաշազան"],
         ts = function(e) {
             r(t, e);
             var a = h(t);
