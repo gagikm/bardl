@@ -1079,6 +1079,9 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
                         var e, a = this.$board.querySelectorAll("game-row")[this.rowIndex],
                             s = this.boardState[this.rowIndex];
                             console.log(a, s);
+                            Ca("event", "guess", {
+                                word: s
+                            }); 
                         if (e = s, !Ta.includes(e) && !La.includes(e)) return a.setAttribute("invalid", ""), void this.addToast("Բառերի ցանկում չկա");
                         if (this.hardMode) {
                             var t = function(e, a, s) {
