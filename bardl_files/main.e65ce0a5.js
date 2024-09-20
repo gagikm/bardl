@@ -1673,7 +1673,7 @@ this.wordle = this.wordle || {}, this.wordle.bundle = function(e) {
                                     r = JSON.parse(window.localStorage.getItem(j)),
                                     i = JSON.parse(window.localStorage.getItem(S)),
                                     l = "Բառդլ ".concat(s);
-                                l += " ".concat(n ? t : "X", "/").concat(6), o && (l += "*");
+                                l += " ".concat(n ? t : "X", "/").concat(6).concat(" 🇦🇲"), o && (l += "*");
                                 var d = "";
                                 return a.forEach((function(e) {
                                     e && (e.forEach((function(e) {
