@@ -15,7 +15,7 @@ while (keepGoing) {
 
 		const modalElement = document.querySelectorAll("game-app")[0].shadowRoot.querySelector("game-theme-manager").querySelector("game-modal");
 		const newElement = document.createElement("div");
-		newElement.textContent = output.translation_text;
+		newElement.textContent = output[0].translation_text;
 		modalElement.appendChild(newElement);
 		keepGoing = false;
 	}
