@@ -1,7 +1,7 @@
 import { pipeline, env } from "https://cdn.jsdelivr.net/npm/@huggingface/transformers";
 
 env.allowLocalModels = false;
-const translator = await pipeline('translation', 'Xenova/m2m100_418M');
+const translator = await pipeline('translation', 'Xenova/nllb-200-distilled-600M');
 
 let keepGoing = true;
 const status = JSON.parse(localStorage.getItem("gameState")).gameStatus;
@@ -10,8 +10,8 @@ while (keepGoing) {
 	if (status === "WIN" || status === "FAIL") {
 		const solution = JSON.parse(localStorage.getItem("gameState")).solution;
 		const output = await translator(solution, {
-		  src_lang: 'hy', // Armenian
-		  tgt_lang: 'en', // English
+		  src_lang: 'hye_Armn', // Hindi
+		  tgt_lang: 'eng_Latn', // French
 		});
 		console.log(output);
 
