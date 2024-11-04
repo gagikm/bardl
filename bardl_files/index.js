@@ -4,7 +4,7 @@ const status = JSON.parse(localStorage.getItem("gameState")).gameStatus;
 env.allowLocalModels = false;
 const translator = await pipeline('translation', 'Xenova/m2m100_418M');
 
-const keepGoing = true;
+let keepGoing = true;
 while (keepGoing) {
 	if (status === "WIN" || status === "FAIL") {
 		const output = await translator('մածուն', {
