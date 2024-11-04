@@ -6,4 +6,4 @@ const output = await translator('մածուն', {
   src_lang: 'hy', // Armenian
   tgt_lang: 'en', // English
 });
-alert(output);
+console.log(output);
