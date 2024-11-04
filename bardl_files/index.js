@@ -1,13 +1,15 @@
 import { pipeline, env } from "https://cdn.jsdelivr.net/npm/@huggingface/transformers";
 
-const status = JSON.parse(localStorage.getItem("gameState")).gameStatus;
 env.allowLocalModels = false;
 const translator = await pipeline('translation', 'Xenova/m2m100_418M');
 
 let keepGoing = true;
+const status = JSON.parse(localStorage.getItem("gameState")).gameStatus;
+
 while (keepGoing) {
 	if (status === "WIN" || status === "FAIL") {
-		const output = await translator('մածուն', {
+		const solution = JSON.parse(localStorage.getItem("gameState")).solution;
+		const output = await translator(solution, {
 		  src_lang: 'hy', // Armenian
 		  tgt_lang: 'en', // English
 		});
