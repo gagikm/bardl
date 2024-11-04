@@ -4,7 +4,8 @@ const status = JSON.parse(localStorage.getItem("gameState")).gameStatus;
 env.allowLocalModels = false;
 const translator = await pipeline('translation', 'Xenova/m2m100_418M');
 
-setInterval(async () => {
+const keepGoing = true;
+while (keepGoing) {
 	if (status === "WIN" || status === "FAIL") {
 		const output = await translator('մածուն', {
 		  src_lang: 'hy', // Armenian
@@ -14,10 +15,8 @@ setInterval(async () => {
 
 		const modalElement = document.querySelectorAll("game-app")[0].shadowRoot.querySelector("game-theme-manager").querySelector("game-modal");
 		const newElement = document.createElement("div");
-		newElement.textContent = output;
+		newElement.textContent = output.translation_text;
 		modalElement.appendChild(newElement);
-
+		keepGoing = false;
 	}
-
-}, 1000);
-
+}
